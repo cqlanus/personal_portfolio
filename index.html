@@ -13,18 +13,29 @@
 
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href='#homePage'>Home</a></li>
-        <li><a href='#aboutMePage'>About Me</a></li>
-        <li><a href='#portfolioPage'>Portfolio</a></li>
-        <li><a href='#blogPage'>Blog</a></li>
-        <li><a href='#footprintPage'>Footprint</a></li>
-      </ul>
+      <div class="navbar-header">
+        <!-- <a href="#" class='navbar-brand'>CQL</a> -->
+        <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#collapsemenu'>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id='collapsemenu'>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href='#homePage'>Home</a></li>
+          <li><a href='#aboutMePage'>About Me</a></li>
+          <li><a href='#portfolioPage'>Portfolio</a></li>
+          <li><a href='#blogPage'>Blog</a></li>
+          <li><a href='#footprintPage'>Footprint</a></li>
+        </ul>
+      </div>
+
     </div>
   </nav>
 
 
-  <div class="page fullheight" id="houseFinch">
+  <div class="page fullheight" id="homePage">
 
         <div class="row">
           <div id='pageTitle' class='col-sm-offset-4 col-sm-4'>
@@ -55,35 +66,103 @@
 
 
   <div class='page' id='aboutMePage'>
-    <div class="container">
-      <h1 id="aboutMeHead">About Me</h1>
-      <div class="row">
-        <div class="col-sm-4">
-          <img id='mephoto' src="images/chris.jpg" alt="">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>About Me</h2>
+          </div>
         </div>
-        <div class="col-sm-8">
-          <p>This will be a brief biography of me</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur tenetur delectus, vero molestias repudiandae! Obcaecati fugit, eos culpa ex voluptates recusandae? Itaque quidem, perspiciatis similique hic quasi quia recusandae quos.</p>
+
+        <div class="row">
+          <div class="col-sm-4" id='mephotodiv'>
+            <img id='mephoto' src="images/chris.jpg" alt="">
+          </div>
+          <div class="col-sm-8">
+            <p>This will be a brief biography of me</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur tenetur delectus, vero molestias repudiandae! Obcaecati fugit, eos culpa ex voluptates recusandae? Itaque quidem, perspiciatis similique hic quasi quia recusandae quos.</p>
+          </div>
         </div>
-      </div>
+        </div>
     </div>
+
   </div>
   <div class='page' id='portfolioPage'>
     <div class="container">
       <h1>Portfolio</h1>
       <div class="row">
-        <div class="col-sm-3">
-          <img src="images/canadageese.jpg" alt="canada geese">
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/canadageese.jpg" alt="canada geese">
+          </div>
         </div>
-        <div class="col-sm-3">
-          <img src="images/hummingbird.jpg" alt="hummingbird">
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/hummingbird.jpg" alt="hummingbird">
+          </div>
         </div>
-        <div class="col-sm-3">
-          <img src="images/stilt.jpg" alt="painted lady">
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/stilt.jpg" alt="painted lady">
+          </div>
         </div>
-        <div class="col-sm-3">
-          <img src="images/zebrabutt.jpg" alt="zebra butt">
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/zebrabutt.jpg" alt="zebra butt">
+          </div>
         </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/duskywing.jpg" alt="duskywing">
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/fencelizard.jpg" alt="fence lizard">
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/egret.jpg" alt="egret">
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/fritillary.jpg" alt="fritillary">
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/godwit.jpg" alt="godwit">
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/peacock.jpg" alt="peacock">
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/shan1.jpg" alt="shan1">
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="images/paintedlady.jpg" alt="paintedlady">
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

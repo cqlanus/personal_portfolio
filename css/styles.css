@@ -28,7 +28,7 @@ li a {
 /** Landing Page **/
 
 
-#houseFinch{
+#homePage{
   background-image: url('../images/house_finch.jpg');
   background-repeat: no-repeat;
   background-position: left;
@@ -84,10 +84,24 @@ and (max-width: 768px) {
 
 
 /** About Me Page **/
+#aboutMePage .jumbotron{
+  background-color: hsl(118, 25%, 79%);
+}
 #mephoto{
   width: 300px;
 }
 
-img {
-  width: 280px;
+#aboutMePage h2 {
+  text-align: center;
+}
+
+#mephotodiv {
+  text-align: center;
+}
+#mephoto{
+  border-radius: 5%;
+}
+
+#portfolioPage img {
+  border-radius: 2%;
 }
