@@ -15,6 +15,7 @@ li a {
 }
 .navbar-default .navbar-nav li a:hover {
   color: gold;
+  text-shadow: 1px 1px black;
 }
 
 .navbar-default .navbar-nav li.active a{
