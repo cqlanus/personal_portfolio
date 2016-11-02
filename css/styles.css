@@ -105,3 +105,7 @@ and (max-width: 768px) {
 #portfolioPage img {
   border-radius: 2%;
 }
+
+#portfolioPage img:hover{
+  opacity: .5;
+}
