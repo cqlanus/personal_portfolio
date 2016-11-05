@@ -4,8 +4,16 @@
   <title>Christopher Lanus</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="css/lightbox.css">
+
+  <!--  Styles -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!--  Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -38,7 +46,7 @@
   <div class="page fullheight" id="homePage">
 
         <div class="row">
-          <div id='pageTitle' class='col-sm-offset-4 col-sm-4'>
+          <div id='pageTitle' class='col-sm-offset-4 col-sm-4 page-header'>
             <h1>Christopher Lanus</h1>
           </div>
         </div> <!-- title row -->
@@ -90,76 +98,110 @@
   <div class='page' id='portfolioPage'>
     <div class="container">
       <h1>Portfolio</h1>
+      <h3>Web Apps</h3>
       <div class="row">
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/canadageese.jpg" alt="canada geese">
+            <a href="eBird_app/index.html">
+              <img src="images/ebird_screenshot.png" alt="ebird_app">
+            </a>
+          </div>
+        </div>
+      </div>
+      <h3>Photography</h3>
+      <div class="row">
+        <div class="col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <a data-title="Canada Geese" data-lightbox="photos" href="images/canadageese.jpg">
+              <img src="images/canadageese.jpg" alt="canada geese"></a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/hummingbird.jpg" alt="hummingbird">
+            <a data-title="Rufous Hummingbird" data-lightbox="photos" href="images/hummingbird.jpg">
+              <img src="images/hummingbird.jpg" alt="hummingbird">
+            </a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/stilt.jpg" alt="painted lady">
+            <a data-title="Black-necked Stilt" data-lightbox="photos" href="images/stilt.jpg">
+              <img src="images/stilt.jpg" alt="stilt">
+            </a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/zebrabutt.jpg" alt="zebra butt">
+            <a data-title="Zebra at the San Diego Zoo" data-lightbox="photos" href="images/zebrabutt.jpg">
+              <img src="images/zebrabutt.jpg" alt="zebra butt">
+            </a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/bluebird.jpg" alt="western bluebird">
+            <a data-title="Western Bluebird" href="images/bluebird.jpg" data-lightbox="photos">
+              <img src="images/bluebird.jpg" alt="western bluebird">
+            </a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/fencelizard.jpg" alt="fence lizard">
+            <a data-title="Western Fence Lizard" href="images/fencelizard.jpg" data-lightbox="photos">
+              <img src="images/fencelizard.jpg" alt="fence lizard">
+            </a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/egret.jpg" alt="egret">
+            <a data-title="Snowy Egret" href="images/egret.jpg" data-lightbox="photos">
+              <img src="images/egret.jpg" alt="egret">
+            </a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/vulture.jpg" alt="vulture">
+            <a data-title="Turkey Vulture" href="images/vulture.jpg" data-lightbox="photos">
+              <img src="images/vulture.jpg" alt="vulture">
+            </a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/godwit.jpg" alt="godwit">
+            <a data-title="Marbled Godwit" href="images/godwit.jpg" data-lightbox="photos">
+              <img src="images/godwit.jpg" alt="godwit">
+            </a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/eufala_skipper.jpg" alt="eufala skipper">
+            <a data-title="Eufala Skipper" href="images/eufala_skipper.jpg" data-lightbox="photos">
+              <img src="images/eufala_skipper.jpg" alt="eufala skipper">
+            </a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/shan1.jpg" alt="shan1">
+            <a data-title="Shannon" href="images/shan1.jpg" data-lightbox="photos">
+              <img src="images/shan1.jpg" alt="shan1">
+            </a>
           </div>
         </div>
 
         <div class="col-sm-3 col-xs-6">
           <div class="thumbnail">
-            <img src="images/paintedlady.jpg" alt="paintedlady">
+            <a data-title="Painted Lady" href="images/paintedlady.jpg" data-lightbox="photos">
+              <img src="images/paintedlady.jpg" alt="paintedlady">
+            </a>
           </div>
         </div>
 
@@ -173,8 +215,16 @@
   </div>
   <div class='page' id='footprintPage'></div>
 
+  <!--  JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!--  Bootstrap JS-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Lightbox -->
+  <script src="js/lightbox.js" charset="utf-8"></script>
+
+  <!--  My Scripts -->
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
