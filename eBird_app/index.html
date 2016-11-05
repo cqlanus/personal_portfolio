@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Final Project: eBird Client</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/ebird.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <header class='page-header container-fluid'>
+          <h1>Bird Finder</h1>
+      </header>
+    </div>
+
+      <form id='myForm' class='form-horizontal'>
+        <div class="row">
+
+          <div class="form-group">
+            <label class='control-label col-sm-1' for='zipCode'>Zip Code: </label>
+            <div class="col-sm-3">
+              <input class='form-control' type='text' id='zipCode' autofocus></input>
+            </div>
+
+            <label class='control-label col-sm-1' for='date'>Days Ago: </label>
+            <div class="col-sm-2">
+              <input class='form-control' type='number' min='1' max='30' value='7' id='date'></input>
+            </div>
+
+            <label class='control-label col-sm-1' for='species'>Species: </label>
+            <div class="col-sm-4">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type='checkbox' id='filter2'>
+                </span>
+                <input type='text' id='species' class='form-control' disabled placeholder="Click to filter by species"></input>
+              </div>
+            </div>
+          </div> <!-- form group -->
+
+        </div> <!-- row -->
+
+        <div class="row">
+          <div class="form-group">
+            <button class='btn btn-primary btn-lg col-xs-5 col-xs-offset-2' type='button' id='findBirds'>Find Birds</button>
+
+            <button id='logLocation' type='button' class='btn btn-warning btn-lg col-xs-1'><i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i></button>
+
+            <button class='btn btn-default btn-lg col-xs-2' id='reset'>Reset</button>
+
+
+          </div> <!-- form group -->
+        </div> <!-- row -->
+
+      </form>
+    </div>
+
+  <div class='container-fluid' id='outputContainer'>
+    <div class="row">
+      <div class="col-md-8 col-sm-7">
+        <div id='myMap'>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-5">
+        <div id='output'>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class='col-sm-4 col-sm-offset-4' id='foot'>&#169; 2016 Christopher Lanus</div>
+    </div>
+  </footer>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src='js/pubsub.js'></script>
+  <script src='js/onLoadModule.js'></script>
+  <script src='js/formDataModule.js'></script>
+  <script src='js/locationDataModule.js'></script>
+  <script src='js/mapModule.js'></script>
+  <script src='js/birdDataModule.js'></script>
+  <script src='js/birdList.js'></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL3TQsX1KHuHZ6vb84_Xt-lWnbtGTk4Bk&callback=initMap"
+    type="text/javascript"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> -->
+</body>
+</html>

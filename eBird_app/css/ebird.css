@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+body{
+  font-family: 'Oxygen', sans-serif;
+}
+
+header{
+  background-image: url('images/hummingbird.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.page-header {
+  margin-top: 0;
+  height: 250px;
+  color: white;
+}
+
+form {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header small {
+  /*color: yellow;*/
+}
+
+.btn {
+  margin-right: 15px;
+}
+
+@media only screen
+and (max-width: 768px){
+  #output {
+    margin-top: 30px;
+  }
+}
+
+#outputContainer {
+  margin-bottom: 50px;
+}
+#myMap {
+  height: 400px;
+  border-radius: 5px;
+
+}
+
+#output{
+
+  max-height: 400px;
+  overflow: scroll;
+}
+
+.listTitle {
+  font-weight: bold;
+}
+
+.bird{
+  cursor: pointer;
+}
+
+.panel-heading:hover {
+  background-color: #286090;
+  border-color: #286090;
+}
+
+#foot {
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-size: 1.2em;
+  /*text-shadow: 1px 0px black;*/
+}
+
+footer .container-fluid{
+  background-color: #337ab7;
+  border-top: solid 1px white;
+  /*opacity: 0.6;*/
+}
