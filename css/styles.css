@@ -1,4 +1,7 @@
-
+/** Basic Page CSS **/
+body {
+  position: relative;
+}
 
 /** NavBar **/
 .navbar {
@@ -25,6 +28,16 @@ li a {
   font-weight: bold;
 }
 
+.navbar-default .navbar-nav li.active a:hover{
+  background-color: gold;
+}
+
+.inBody{
+  background: linear-gradient(#588650, hsl(118, 25%, 79%));
+  padding: 5px 0;
+  transition: all .5s ease-out;
+  opacity: 0.8;
+}
 
 /** Landing Page **/
 
